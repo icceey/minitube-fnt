@@ -79,7 +79,7 @@ class Client {
     }
 
     static global(): Client {
-        return new Client(process.env.API || "http://47.103.193.47")
+        return new Client(process.env.API)
     }
 
     private async fetchJSON(url: RequestInfo, init: RequestInit) {
